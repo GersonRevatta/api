@@ -2,6 +2,8 @@ class PagesController < ApplicationController
   require 'httparty'
   require 'nokogiri'
   require 'pry'
+  # para eliminar todos los estilos del html
+  # doc.css('*').remove_attr('style')
   def home
     pagina = HTTParty.get('https://madrid.craigslist.es/search/hhh?=0')
     @array_Pisos = []
