@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<senv:Envelope 
+    xmlns:tns="http://otra_url.com/utilities" 
+    xmlns:senv="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns:s0="apps.services.soap.core.views">
+    <senv:Body>
+        <tns:report_uuidResponse>
+            <tns:report_uuidResult>
+                <s0:invoices>
+                    <s0:ReportUUID>
+                        <s0:date>2017-03-30T17:59:27.284298</s0:date>
+                        <s0:uuid>7F53D32C-8388-4A14-AE5B-63237381AC1A</s0:uuid>
+                    </s0:ReportUUID>
+                    <s0:ReportUUID>
+                        <s0:date>2017-03-30T13:03:54.963554</s0:date>
+                        <s0:uuid>05E5DF90-EEE8-405E-91FB-1BE7DBBF9E33</s0:uuid>
+                    </s0:ReportUUID>
+                </s0:invoices>
+            </tns:report_uuidResult>
+        </tns:report_uuidResponse>
+    </senv:Body>
+</senv:Envelope>

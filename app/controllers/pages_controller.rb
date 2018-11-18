@@ -12,4 +12,14 @@ class PagesController < ApplicationController
     end
     @products = Product.all
   end
+
+  def landing
+    @xml = File.read(Rails.root.join("public", "report_uuid.xml"))
+    xml = Nokogiri::XML(@xml)
+    @array = []
+    body = xml.xpath("//s0:invoices")
+    body.xpath("//s0:uuid").each do |e|
+      @array.push(e.content)
+    end
+  end
 end
